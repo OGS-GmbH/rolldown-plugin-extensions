@@ -1,9 +1,6 @@
-import {
-  ESLINT_JSON_RULES,
-  ESLINT_MARKDOWN_RULES
-} from "@ogs-gmbh/linter";
-import eslintMarkdown from "@eslint/markdown";
 import eslintJsonPlugin from "@eslint/json";
+import eslintMarkdown from "@eslint/markdown";
+import { ESLINT_JSON_RULES, ESLINT_MARKDOWN_RULES } from "@ogs-gmbh/linter";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig(
@@ -25,22 +22,22 @@ export default defineConfig(
     ]
   },
   {
-    files: [ "**/*.json" ],
+    files: ["**/*.json"],
     language: "@json/json",
     rules: ESLINT_JSON_RULES
   },
   {
-    files: [ "**/*.json5" ],
+    files: ["**/*.json5"],
     language: "@json/json5",
     rules: ESLINT_JSON_RULES
   },
   {
-    files: [ "**/*.jsonc" ],
+    files: ["**/*.jsonc"],
     language: "@json/jsonc",
     rules: ESLINT_JSON_RULES
   },
   {
-    files: [ "**/*.md" ],
+    files: ["**/*.md"],
     rules: ESLINT_MARKDOWN_RULES,
     language: "@markdown/gfm",
     languageOptions: {
