@@ -1,7 +1,7 @@
 {
   "name": "@ogs-gmbh/rolldown-plugin-extensions",
   "version": "1.0.0",
-  "description": "A react project template with a ready-to-use structure.",
+  "description": "Handles and resolves import extensions automatically, ensuring consistent module specifiers and seamless compatibility across different environments and build configurations.",
   "keywords": [
     "application-foundation",
     "boilerplate",
@@ -15,8 +15,8 @@
     "starter",
     "template"
   ],
-  "homepage": "https://ogs-gmbh.github.io/_react-template/",
-  "bugs": "https://github.com/OGS-GmbH/_react-template/issues",
+  "homepage": "https://ogs-gmbh.github.io/rolldown-plugin-extensions/",
+  "bugs": "https://github.com/OGS-GmbH/rolldown-plugin-extensions/issues",
   "license": "MIT",
   "author": "OGS GmbH",
   "contributors": [
@@ -26,7 +26,7 @@
       "url": "https://simonkov.dev"
     }
   ],
-  "repository": "https://github.com/OGS-GmbH/_react-template",
+  "repository": "https://github.com/OGS-GmbH/rolldown-plugin-extensions",
   "files": [
     "./dist/main",
     "CHANGELOG.md"
@@ -49,14 +49,13 @@
     "ci:pr:lint:main:eslint": "eslint .",
     "ci:pr:lint:main:oxfmt": "oxfmt --check",
     "ci:pr:lint:main:oxlint": "oxlint",
-    "ci:test:main:vitest": "vitest run --coverage",
     "commit": "commit",
     "prepare": "husky",
     "vitepress": "bash ./.vitepress/scripts/pre-vitepress.sh && vitepress dev .vitepress",
     "vitepress:preview": "vitepress preview .vitepress"
   },
   "dependencies": {
-    "rolldown": "1.0.0-rc.12"
+    "rolldown": ">=1.0.0-rc.12"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.2",
@@ -69,10 +68,8 @@
     "@ogs-gmbh/vitepress-plugin-sidebar": "^1.0.3",
     "@ogs-gmbh/vitepress-theme": "^1.1.0",
     "@oxc-project/types": "^0.123.0",
-    "@vitest/coverage-v8": "^4.1.0",
     "eslint": "^9.39.2",
     "husky": "^9.1.7",
-    "jsdom": "^29.0.1",
     "lint-staged": "^16.2.7",
     "oxfmt": "^0.43.0",
     "oxlint": "^1.58.0",
@@ -86,7 +83,6 @@
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.1",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-group-icons": "^1.7.1",
-    "vitest": "^4.1.0"
+    "vitepress-plugin-group-icons": "^1.7.1"
   }
 }
