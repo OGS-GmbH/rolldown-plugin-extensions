@@ -5,6 +5,7 @@ import packageJson from "../../package.json";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: "rolldown-plugin-extensions",
   description:
     "Handles and resolves import extensions automatically, ensuring consistent module specifiers and seamless compatibility across different environments and build configurations.",
