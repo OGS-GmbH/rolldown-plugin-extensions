@@ -93,7 +93,6 @@ importers:
       vitepress-plugin-group-icons:
         specifier: ^1.7.1
         version: 1.7.1(vite@8.0.1(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
-    publishDirectory: dist/main
 
 packages:
 

@@ -45,9 +45,6 @@
       "default": "./dist/main/public-api.js"
     }
   },
-  "publishConfig": {
-    "directory": "dist/main"
-  },
   "scripts": {
     "ci:build:main:production": "tsdown",
     "ci:docs:extract:typedoc": "typedoc",
